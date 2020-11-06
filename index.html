@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PodCast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favi.webp">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+      .c1{
+        position: relative;
+      }
+      #i1{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        max-width: 37%;
+        padding: 0;
+
+      }
+      #i2{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        max-width: 37%;
+        padding: 0;
+      }
+      #i3{
+        position: absolute;
+        top: 76%;
+        left:30%;
+        max-width: 45%;
+        padding: 4%;
+      }
+      
+        video {
+  width: 100%;
+  height: auto;
+
+      }
+
+      .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #06b833;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #06b833;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm">
+        <div id=logo>
+            <a class="navbar-brand" href="#" style="font-size: 2vw; color: rgb(153, 143, 143); margin-right: 10vw;">LOGO</a>
+        </div>
+        <div class="row">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif; color: black;font-size: 1vw;">EPISODES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif;color: black;font-size: 1vw;">SHOPS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif;color: black; font-size: 1vw;">DONATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif;color: black;font-size: 1vw;">SUBSCRIBE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif;color: black;font-size: 1vw;">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-family: 'Oxygen', sans-serif;color: black;font-size: 1vw;">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+</div>
+<div class="c1">
+  <div class="col-xs-12">
+     <img class="img-fluid" src="a.jpeg" alt="image" style="width:100%;height:35vw; opacity: 0.6;">
+    
+      <div id=i1>
+        <div class="abc" style="background-color:#61c93e;border-radius:15px;box-shadow: 0 5px 5px grey;">
+          <h2 style="font-family: Oxygen; color: white; margin:5%; padding: 5%;font-size: 2vw;">Welcome to PodCast, a Weekly Celebration of Javascript and Web</h2>
+        </div>
+        
+      </div>
+      <div id=i2>
+        <div class="ab" style="background-color:#61c93e; border-radius: 15px;border-radius: 25px;box-shadow: 0 5px 5px grey;">
+          <h2 style="font-family: Oxygen; color: white; margin:10px; padding-top:15px ; padding-left:5px;font-size: 2vw;">Let's learn something new about design!</h2>
+          <p style="font-family: Oxygen; color: white; margin:10px; padding-bottom: 15px;padding-left:5px;font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+          
+        </div>
+        
+      </div>
+      <div id=i3 >
+        <div class="a" style="background-color:#3797b8; border-radius: 25px;box-shadow: 0 5px 5px grey; position: relative;">
+          <p style="font-family: Oxygen; color: white; margin:1%; padding:5%;padding-left:15px;font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+        </div>
+        
+      </div>
+      
+      
+     </div>
+ </div>
+ <div class="container">
+  <br>
+  <br>
+  <div class="col-sm-12">
+    <p class="text-center" style="font-family: Oxygen;font-size:3.5vw">Trailer</p>
+    <p class="text-center" style="font-family: Oxygen; color: #21bf4c;font-size:2.5vw;">Perfect Pitch</p>
+    <video width="500" height="500" controls poster="https://s3.eu-central-1.amazonaws.com/pipe.public.content/poster.png" preload="none" style="margin-left: 26vw; width:40%;border-radius: 5%;object-fit: fill;margin-bottom: 3%;">
+      <source src="Tech_Triangle.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <div class="text-center" style="max-width: 50%; margin-left: 20vw;"><p style="font-family: Oxygen; font-size: 1.5vw;">People with perfect pitch or sound can hear every single sound as musical note. Is this extraordinary talent or a blessing or a curse? In this episode we dive into neuroscience pitalls and all.</p></div>
+   <br>
+
+   <div class="text-center" >
+    <i class="fa fa-eye" aria-hidden="true" style="color: #21bf4c;"><span style="font-size: 1.5vw;"> 1,234,567 views</span></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-bell" aria-hidden="true" style="color: #21bf4c;" ><span style="font-size:1.5vw"> Ways to Subscribe</span></i>  
+    <br><br><br><br>
+   </div>
+     
+  </div>
+
+  <div class="col-sm-12">
+    <h1 class="text-center" style="font-family: Oxygen; font-size: 3.5vw;">Current Episodes</h1>
+   <!-- <div style="float: right;">
+   <p><span style="margin-right:1vw">Autoplay</span>
+     <span>
+      <label class="switch">
+      
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+     </span>
+   </p>
+  
+   </div> -->
+
+    <br>
+    <br>
+  
+    <div class="container">
+      
+        <div class="row" style="border-right:solid #42f572 0.1vw; box-shadow:5px 0px 5px #96f2af ;margin:1vw;">
+          <div class="col-sm-5">
+            <img src="curr.jpg" class="media-object img-fluid" alt="curr" width="250" height="250" style="border-radius: 10%; margin-right: 10vw; margin-bottom: 5vh; margin-top: 5vh;">
+          </div>
+          <div class="col-sm-7 justify-content-center align-self-center">
+          <p style="font-size: 1.5vw;"><b>Episode:</b> Naruto Shipuden</p>
+              <a href="https://youtu.be/m5Y1NNdRQhs" style="text-decoration: none; font-size: 1.5vw;">https://youtu.be/m5Y1NNdRQhs</a>
+              <p style="font-size: 1.5vw;">Naruto is one the greatest character I have seen in anime history. He is jovial and very funny and also very strong</p>
+              
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <button class="btn btn-success btn-block">Share</button>
+                </div>
+              </div>  
+
+      
+            </div>
+          
+        </div>
+      </div>
+      <div class="container">
+      
+        <div class="row" style="border-right:solid #42f572 0.1vw; box-shadow:5px 0px 5px #96f2af ;margin:1vw;">
+          <div class="col-sm-5">
+            <img src="curr.jpg" class="media-object img-fluid" alt="curr" width="250" height="250" style="border-radius: 10%; margin-right: 10vw; margin-bottom: 5vh; margin-top: 5vh;">
+          </div>
+          <div class="col-sm-7 justify-content-center align-self-center">
+          <p style="font-size: 1.5vw;"><b>Episode:</b> Naruto Shipuden</p>
+              <a href="https://youtu.be/m5Y1NNdRQhs" style="text-decoration: none; font-size: 1.5vw;">https://youtu.be/m5Y1NNdRQhs</a>
+              <p style="font-size: 1.5vw;">Naruto is one the greatest character I have seen in anime history. He is jovial and very funny and also very strong</p>
+              
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <button class="btn btn-success btn-block">Share</button>
+                </div>
+              </div>  
+
+      
+            </div>
+          
+        </div>
+      </div>
+      <div class="container">
+      
+        <div class="row" style="border-right:solid #42f572 0.1vw; box-shadow:5px 0px 5px #96f2af ;margin:1vw;">
+          <div class="col-sm-5">
+            <img src="curr.jpg" class="media-object img-fluid" alt="curr" width="250" height="250" style="border-radius: 10%; margin-right: 10vw; margin-bottom: 5vh; margin-top: 5vh;">
+          </div>
+          <div class="col-sm-7 justify-content-center align-self-center">
+          <p style="font-size: 1.5vw;"><b>Episode:</b> Naruto Shipuden</p>
+              <a href="https://youtu.be/m5Y1NNdRQhs" style="text-decoration: none; font-size: 1.5vw;">https://youtu.be/m5Y1NNdRQhs</a>
+              <p style="font-size: 1.5vw;">Naruto is one the greatest character I have seen in anime history. He is jovial and very funny and also very strong</p>
+              
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <button class="btn btn-success btn-block">Share</button>
+                </div>
+              </div>  
+
+      
+            </div>
+          
+        </div>
+      </div>
+      <div class="container">
+      
+        <div class="row" style="border-right:solid #42f572 0.1vw; box-shadow:5px 0px 5px #96f2af ;margin:1vw;">
+          <div class="col-sm-5">
+            <img src="curr.jpg" class="media-object img-fluid" alt="curr" width="250" height="250" style="border-radius: 10%; margin-right: 10vw; margin-bottom: 5vh; margin-top: 5vh;">
+          </div>
+          <div class="col-sm-7 justify-content-center align-self-center">
+          <p style="font-size: 1.5vw;"><b>Episode:</b> Naruto Shipuden</p>
+              <a href="https://youtu.be/m5Y1NNdRQhs" style="text-decoration: none; font-size: 1.5vw;">https://youtu.be/m5Y1NNdRQhs</a>
+              <p style="font-size: 1.5vw;">Naruto is one the greatest character I have seen in anime history. He is jovial and very funny and also very strong</p>
+              
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <button class="btn btn-success btn-block">Share</button>
+                </div>
+              </div>  
+
+      
+            </div>
+          
+        </div>
+      </div>
+      <div class="container">
+      
+        <div class="row" style="border-right:solid #42f572 0.1vw; box-shadow:5px 0px 5px #96f2af ;margin:1vw;">
+          <div class="col-sm-5">
+            <img src="curr.jpg" class="media-object img-fluid" alt="curr" width="250" height="250" style="border-radius: 10%; margin-right: 10vw; margin-bottom: 5vh; margin-top: 5vh;">
+          </div>
+          <div class="col-sm-7 justify-content-center align-self-center">
+          <p style="font-size: 1.5vw;"><b>Episode:</b> Naruto Shipuden</p>
+              <a href="https://youtu.be/m5Y1NNdRQhs" style="text-decoration: none; font-size: 1.5vw;">https://youtu.be/m5Y1NNdRQhs</a>
+              <p style="font-size: 1.5vw;">Naruto is one the greatest character I have seen in anime history. He is jovial and very funny and also very strong</p>
+              
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <button class="btn btn-success btn-block">Share</button>
+                </div>
+              </div>  
+
+      
+            </div>
+          
+        </div>
+      </div>
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="text-center" style="font-family: Oxygen; font-size: 3vw;">Recent Gallary</h1>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="recent.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div class="bg-success" style="border-radius: 2%;">
+              <p class="text-center" style="margin-top: 1vw; color: white; font-family: Oxygen; font-size: 1.5vw;">Ichigo vs Naruto</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="rec.jpg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div class="bg-success" style="border-radius: 2%;">
+              <p class="text-center" style="margin-top: 1vw; color: white; font-family: Oxygen; font-size: 1.5vw;">Soul Knight</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="r.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div class="bg-success" style="border-radius: 2%;">
+              <p class="text-center" style="margin-top: 1vw; color: white; font-family: Oxygen;font-size: 1.5vw;">Death Note</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="text-center" style="font-family: Oxygen;font-size: 3vw;">Past Episodes</h1>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="sao.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="dn.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="fa.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="k.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="lel.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="n.jpeg" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <p style="font-size: 1.3vw;"><b>Episode: </b>Anime Abstract</p>
+                <p style="font-size: 1.3vw;">November 6,2020</p>
+                <p style="font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit.</p>
+                
+              </div>
+              <span style="float: right; padding-right:1.5vw;"><p style="color:#21bf4c ;font-size: 1.3vw;">Guest Show Episode</p></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h1 style="font-family: Oxygen;font-size: 3vw;">Our Hosts</h1>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="blank.png" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <h3 style="font-family: Oxygen;font-size: 1.3vw;">Jon Snow</h3>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Show Host</p>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. </p>
+                  
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="blank.png" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <h3 style="font-family: Oxygen;font-size: 1.3vw;">Jon Snow</h3>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Show Host</p>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. </p>
+                  
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <img class="card-img-top" src="blank.png" alt="recent" width="100%" style="border-radius: 2%;">
+            <div style="border-radius: 1%;">
+              <div class="text-center" style="font-family: Oxygen;margin-top: 1vw;">
+                <h3 style="font-family: Oxygen;font-size: 1.3vw;">Jon Snow</h3>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Show Host</p>
+                  <p style="font-family: Oxygen;font-size: 1.3vw;">Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. Lorem ipsum doret alum, consectuter adipiscing elit. </p>
+                  
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <footer >
+    <div class="container-fluid" style="box-shadow: 0 -2px 5px grey; background-color: #f4f5f0;">
+      <div class="row">
+        <div class="col-sm-3" style="margin-top: 5px; margin-bottom: 10px; ">
+          <p style="font-size: 1.3vw;">LOGO</p>
+          <p style="font-size: 1.3vw;">Lorem epsum dorem sit amet amaui vanakei nvaoevaon</p>
+          <a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn-floating btn-lg btn-rd" type="button" role="button"><i class="fab fa-reddit"></i></a>
+          <a class="btn-floating btn-lg btn-de" type="button" role="button"><i class="fab fa-dev"></i></a>
+        </div>
+        <div class="col-sm-2" style="margin-top: 5px; margin-bottom: 10px;">
+          <b style="margin-left: 2vw;font-size: 1.75vw;">PodCasts</b>
+          <p></p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Backstage</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Founders Talk</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Go Time</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">JSParty</p>
+        </div>
+        <div class="col-sm-2" style="margin-top: 5px; margin-bottom: 10px;">
+          <b style="margin-left: 2vw;font-size: 1.75vw;">Information</b>
+          <p></p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">About Us</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Our Investors</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Feedback</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Customer Care</p>
+        </div>
+        <div class="col-sm-2" style="margin-top: 5px; margin-bottom: 10px;">
+          <b style="margin-left: 2vw;font-size: 1.75vw;">Our Stories</b>
+          <p></p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Success Stories</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Sell on indiaMart</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Enterprise Solution</p>
+          <p style="margin-left: 2vw;font-size: 1.3vw;">Learning Center</p>
+        </div>
+        <div class="col-sm-3" style="margin-top: 5px; margin-bottom: 10px;">
+          <b style="margin-left: 2vw;font-size: 1.75vw;"> Newsletter</b>
+          <p></p>
+           <p style="margin-left: 2vw;font-size: 1.3vw;">Get Closer to UX action.</p>
+           <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-2">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+              aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="align-middle">
+    <div class="text-center" style="box-shadow:0 -2px 5px grey">
+      <p style="font-family: Oxygen; margin-top: 3px; font-size: 1.5vw;">CopyRight 2020. Developed by Satwik</p>
+  
+    </div>
+  </div>
+   
+         
+  </div> 
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
